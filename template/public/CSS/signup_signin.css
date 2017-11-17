@@ -11,7 +11,7 @@ body {
 h2,
 .lead a {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(250, 144, 4);
+    color:orange
 }
 
 
@@ -23,5 +23,6 @@ footer#copyright hr {
     border-bottom: 1px solid darkgray;
 }
 .navbar-brand{
-    font-family: 'Lemon';font-size: 18px;
+    font-family: 'Lemon';
+    font-size: 18px;
 }
