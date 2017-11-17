@@ -22,3 +22,6 @@ footer#copyright hr {
     border-top: 1px solid darkgray;
     border-bottom: 1px solid darkgray;
 }
+.navbar-brand{
+    font-family: 'Lemon';font-size: 18px;
+}
