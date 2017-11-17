@@ -1,0 +1,24 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.container-fluid {
+    padding: 1rem;
+}
+
+h2,
+.lead a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(250, 144, 4);
+}
+
+
+
+footer#copyright hr {
+    margin-left: 10%;
+    margin-right: 10%;
+    border-top: 1px solid darkgray;
+    border-bottom: 1px solid darkgray;
+}
