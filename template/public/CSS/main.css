@@ -5,11 +5,7 @@ html,
 body {
     height: 100%;
     font-weight: 300;
-}
-wrapper {
-    min-height: 100%;
-    position: relative;
-}
+}  
 
 .cover-caption p {
     padding: 1.4rem;
@@ -43,11 +39,12 @@ li.active {
     margin-bottom: 10px;
 }
 
-.list-group-item h5 {
-    border-bottom: 2px solid burlywood;
-}
+
 
 #wrapper {
+    min-height: 100%;
+    position: relative;
+
     text-align: center;
     color: white;
     align-content: center;
