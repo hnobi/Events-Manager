@@ -57,8 +57,7 @@
                     </button>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="profile.html">View Profile</a>
-                        <a class="dropdown-item" href="add_center.html">Add Center</a>
-                        <a class="dropdown-item" href="add_event.html">create events</a>
+                        <a class="dropdown-item" href="#createcenter" data-toggle="modal">Create center</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="index.html">Log out</a>
                     </div>
@@ -181,8 +180,6 @@
                 <!-- Edit modal body -->
                 <div class="modal-body">
                     <form role="form" action="">
-
-
                         <div class="form-group">
                             <h6 class="text-center text-info p-2">Title</h6>
                             <input type="text" class="form-control" value="HallMark event center" placeholder="Enter Event Name">
@@ -197,7 +194,6 @@
                             <h6 class="text-center text-info p-2">Facilities</h6>
                             <input value="table, chair, camera" class="form-control" placeholder="g projector, number of chairs etc">
                         </div>
-
                 </div>
             </div>
             <div class="modal-footer">
@@ -210,21 +206,64 @@
     </div>
     </div>
 
-    <footer id="copyright">
-        <hr>
-        <div class="container">
-            <p class="text-center text-muted ">&copy; 2017 Events Manager, Andela Nigeria. All rights reserved.</p>
+
+    <!-- Create Center Modal -->
+    <div class="modal fade" id="createcenter" tabindex="-1" role="dialog" aria-labelledby="createcenter" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-warning" id="createcenter">Create New Center</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body bg-info text-light">
+                    <form role="form" action="#" method="post">
+                        <div class="form-group ">
+                            <h6 class="text-center text-info p-2 ">Name</h6>
+                            <input type="text " class="form-control " placeholder="Give Center a Name">
+                        </div>
+
+                        <div class="form-group ">
+                            <h6 class="text-center text-info p-2 ">Location</h6>
+                            <input type="text " class="form-control " placeholder="Enter Center Address ">
+                        </div>
+
+                        <div class="form-group ">
+                            <h6 class="text-center text-info p-2 ">Facilities</h6>
+                            <input type="text " class="form-control " placeholder="e.g projector, number of chairs etc">
+                    </form>
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="submit " class="btn btn-block btn-warning  mb-5 font-weight-bold">Create Center</button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
-    <!--Page Footer End-->
+
+        <!-- Create Center Modal Ends -->
 
 
-    <!-- jQuery -->
-    <script src="public/jquery/jquery.min.js "></script>
-    <!-- Bootstrap JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-        crossorigin="anonymous"></script>
-    <script src="./public/bootstrap4/js/bootstrap.min.js "></script>
+
+
+
+
+        <footer id="copyright">
+            <hr>
+            <div class="container">
+                <p class="text-center text-muted ">&copy; 2017 Events Manager, Andela Nigeria. All rights reserved.</p>
+            </div>
+        </footer>
+        <!--Page Footer End-->
+
+
+        <!-- jQuery -->
+        <script src="public/jquery/jquery.min.js "></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+            crossorigin="anonymous"></script>
+        <script src="./public/bootstrap4/js/bootstrap.min.js "></script>
 </body>
 
 </html>
