@@ -4,6 +4,7 @@
   "description": "Given you manage an events center, this app will help you accept applications to use your center\r / facilities, and will either decline events when the proposed day is already taken, or suggest an\r available day",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon --watch server --exec babel-node -- server/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +18,17 @@
   },
   "homepage": "https://github.com/hnobi/Events-Manager#readme",
   "devDependencies": {
-    "eslint": "^4.11.0"
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
   }
 }
