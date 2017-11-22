@@ -2,7 +2,7 @@
   "name": "events-manager",
   "version": "1.0.0",
   "description": "Given you manage an events center, this app will help you accept applications to use your center\r / facilities, and will either decline events when the proposed day is already taken, or suggest an\r available day",
-  "main": "index.js",
+  "main": "iapp.js",
   "scripts": {
     "start": "nodemon --watch server --exec babel-node -- server/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
