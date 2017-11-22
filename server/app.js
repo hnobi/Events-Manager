@@ -1,6 +1,7 @@
+
 import express from 'express';
 import bodyParser from 'body-parser';
-
+import eventsRoute from './routes/events';
 
 const app = express();
 const port = parseInt((process.env.PORT), 10) || 3000;
@@ -18,8 +19,8 @@ app.get('/', (req, res) => {
 });
 
 
-// app.use('/api', recipeRoutes)
+app.use('/api/v1', eventsRoute);
 
-app.listen(port, console.log(`server running at ${port}`));
+app.listen(port, () => console.log(`Application listening  on port ${port}`));
 
 export default app;
