@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.get('/', (req, res) => {
     res.status(404)
         .json({
-            message: 'Welcome Message ,am working perfectly',
+            message: 'Welcome Message ,serve working perfectly',
         });
 });
 
