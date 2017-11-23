@@ -19,3 +19,4 @@ const centers = [
         facilities: 'chair,cmeral,blah',
     },
 ];
+export default centers;

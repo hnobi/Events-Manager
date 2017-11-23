@@ -24,7 +24,7 @@ const events = [
         userId: 2,
     },
     {
-        id: 3,
+        id: 4,
         title: 'Kings weding',
         location: 'Oshogbo',
         date: '21 Nov, 2017',
