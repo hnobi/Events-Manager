@@ -42,7 +42,7 @@ export default class CentersController {
                     .json({
                         status: 'Success',
                         message: 'Successfully retrived a center',
-                        // centersData,
+                        centersData,
                     });
             }
         }
