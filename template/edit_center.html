@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Events Manager | EditEvents</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--google font-->
+    <link href='https://fonts.googleapis.com/css?family=Bungee inline' rel='stylesheet'>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./public/bootstrap4/css/bootstrap.min.css">
+    <!-- Bootstrap Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./public/CSS/main.css">
+</head>
+
+<body>
+    <!--Header Container Start -->
+    <div class="container-fluid ">
+
+        <!--Site Navigation Start-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav-main">
+            <a class="navbar-brand text-warning" href="index.html">Events Manager</a>
+            <button class="navbar-toggler" type="button " data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false "
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2 my-lg-0" type="text" placeholder="Search Event by name">
+                    <span class="input-group-btn">
+                        <button type="submit" class=" btn btn-md btn-outline-warning">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </span>
+                </form>
+                <ul class="navbar-nav ml-auto mr-5">
+                    <li class="nav-item ">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="centers.html">Browse Event</a>
+                    </li>
+
+                </ul>
+                <!--  single warning dropdown button -->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-warning dropdown-toggle text-light" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Hammed
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="profile.html">View Profile</a>
+                        <a class="dropdown-item" href="#createcenter" data-toggle="modal">Create center</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="index.html">Log out</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--Site Navigation End-->
+
+
+
+    <!--Main Div Start-->
+    <main id="wrapper">
+        <div class="container">
+            <!--Section For Main Div Start-->
+            <section class="cover text-center">
+                <div class="col">
+                    <h3 class="text-warning mb-1">Available Centers</h3>
+                </div>
+                <hr>
+            </section>
+            <!--Section For Main Div End-->
+
+            <div class="col-10 mx-auto mt-5 ">
+                <div class="card-deck mb-5 mt-3">
+                    <!-- Center1 Start -->
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 pt-2">
+                        <div class="card">
+                            <img class="card-img-top" src="./public/img/center1.jpg" alt="Card image cap">
+                            <div class="card-body p-2">
+                                <h5 class="card-title mt-2 text-warning">Hall Mark event center</h5>
+                                <p class="text-primary">34, Ikorodun Road Lagos</p>
+                                <div class="card-text">
+                                    <button class="btn btn-outline-success btn-block" data-toggle="modal" data-target="#editEvent">
+                                        <small>
+                                            <i class="fa fa-edit"></i> Edit</small>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Center1 Ends -->
+
+                    <!-- Center2 Start -->
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 pt-2">
+                        <div class="card">
+                            <img class="card-img-top" src="./public/img/center2.jpg" alt="Card image cap">
+                            <div class="card-body p-2">
+                                <h5 class="card-title  mt-2 text-warning">Water View Event Center</h5>
+                                <p class="text-primary">18,Agboro Estate Enugu</p>
+                                <div class="card-text">
+                                    <button class="btn btn-outline-success btn-block" data-toggle="modal" data-target="#editEvent">
+                                        <small>
+                                            <i class="fa fa-edit"></i> Edit</small>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Center2 Ends -->
+
+                    <!-- Center3 Start -->
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 pt-2">
+                        <div class="card">
+                            <img class="card-img-top" src="./public/img/center3.jpg" alt="Card image cap">
+                            <div class="card-body p-2">
+                                <h5 class="card-title  mt-2 text-warning">City Hall Event Center</h5>
+                                <p class="text-primary">57, Toyin Street Ikeja</p>
+                                <div class="card-text">
+
+                                    <button class="btn btn-outline-success btn-block" data-toggle="modal" data-target="#editEvent">
+                                        <small>
+                                            <i class="fa fa-edit"></i> Edit</small>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Center3 Ends -->
+                </div>
+            </div>
+
+            <!--Pagination Start-->
+            <div class="row">
+                <div class="col-6 col-sm-4 col-md-4 mx-auto">
+                    <ul class="pagination text-center">
+                        <li class="page-item">
+                            <a class="page-link" href="#">Previous</a>
+                        </li>
+                        <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Pagination End-->
+    </main>
+
+    <!-- Edit Center Modal -->
+    <div class="modal fade" id="editEvent" tabindex="-1" role="dialog" aria-labelledby="editEvent" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-muted text-center">
+                    <h5 class="modal-title text-warning font-weight-bold" id="editEvent">Events information</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <i class="fa fa-times-circle" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+                <!-- Edit modal body -->
+                <div class="modal-body">
+                    <form role="form" action="">
+                        <div class="form-group">
+                            <h6 class="text-center text-info p-2">Title</h6>
+                            <input type="text" class="form-control" value="HallMark event center" placeholder="Enter Event Name">
+                        </div>
+
+                        <div class="form-group">
+                            <h6 class="text-center text-info p-2">Location</h6>
+                            <input type="text" value="34, Adebola street oyo" class="form-control" placeholder="enter the center address">
+                        </div>
+
+                        <div class="form-group">
+                            <h6 class="text-center text-info p-2">Facilities</h6>
+                            <input value="table, chair, camera" class="form-control" placeholder="g projector, number of chairs etc">
+                        </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-info">Save changes</button>
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+    <!-- Create Center Modal -->
+    <div class="modal fade" id="createcenter" tabindex="-1" role="dialog" aria-labelledby="createcenter" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-warning" id="createcenter">Create New Center</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body bg-info text-light">
+                    <form role="form" action="#" method="post">
+                        <div class="form-group ">
+                            <h6 class="text-center text-info p-2 ">Name</h6>
+                            <input type="text " class="form-control " placeholder="Give Center a Name">
+                        </div>
+
+                        <div class="form-group ">
+                            <h6 class="text-center text-info p-2 ">Location</h6>
+                            <input type="text " class="form-control " placeholder="Enter Center Address ">
+                        </div>
+
+                        <div class="form-group ">
+                            <h6 class="text-center text-info p-2 ">Facilities</h6>
+                            <input type="text " class="form-control " placeholder="e.g projector, number of chairs etc">
+                    </form>
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="submit " class="btn btn-block btn-warning  mb-5 font-weight-bold">Create Center</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Create Center Modal Ends -->
+
+
+
+
+
+
+        <footer id="copyright">
+            <hr>
+            <div class="container">
+                <p class="text-center text-muted ">&copy; 2017 Events Manager, Andela Nigeria. All rights reserved.</p>
+            </div>
+        </footer>
+        <!--Page Footer End-->
+
+
+        <!-- jQuery -->
+        <script src="public/jquery/jquery.min.js "></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+            crossorigin="anonymous"></script>
+        <script src="./public/bootstrap4/js/bootstrap.min.js "></script>
+</body>
+
+</html>

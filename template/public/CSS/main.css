@@ -1,0 +1,81 @@
+/* main.css */
+
+
+html,
+body {
+    height: 100%;
+    font-weight: 300;
+}  
+
+.cover-caption p {
+    padding: 1.4rem;
+}
+
+.container-fluid {
+    padding: 1rem;
+}
+
+
+h2,
+.lead a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: cadetblue;
+}
+
+hr#favorites {
+    max-width: 14rem;
+    min-width: 14rem;
+    margin: 0 auto;
+}
+
+li.active {
+    background-color: whitesmoke;
+}
+
+.list-inline li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+#wrapper {
+    min-height: 100%;
+    position: relative;
+
+    text-align: center;
+    color: white;
+    align-content: center;
+    height: auto;
+    padding: 1.4rem;
+}
+
+main.landing {
+    background: url("../img/startup.jpg") bottom center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+
+
+.navbar-brand{
+    font-family: 'Lemon';
+    font-size: 18px;
+}
+footer#copyright hr {
+    margin-left: 10%;
+    margin-right: 10%;
+    border-top: 1px solid darkgray;
+    border-bottom: 1px solid darkgray;
+}
+
+
+@media screen and (max-width: 1000px) and (min-width: 150px) {
+    .display-3 {
+        font-size: 3rem;
+    }
+}

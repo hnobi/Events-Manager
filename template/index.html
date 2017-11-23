@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Events Manager | Sign up</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./public/bootstrap4/css/bootstrap.min.css">
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Lemon' rel='stylesheet'>
+    <!-- Bootstrap Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="./public/CSS/main.css">
+</head>
+
+<body>
+    <!--Entire Site Wrapper Start-->
+    <div class="wrapper">
+        <!--Header Container Start -->
+        <div class="container-fluid">
+
+            <!--Site Navigation Start -->
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand text-warning" href="index.html">Events Manager</a>
+                <button class="navbar-toggler" type="button " data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false "
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <form class="form-inline my-2 my-lg-0 ml-auto">
+                        <input class="form-control mr-sm-0 " type="text" placeholder="Search Event by name">
+                        <span class="input-group-btn">
+                            <button type="submit" class=" btn btn-md btn-outline-warning">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </form>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#signInModal">
+                                Login
+                            </button>
+
+                            <!-- Sign in Modal body start-->
+                            <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-info ">
+                                            <h5 class="modal-title text-warning" id="signInModal">Welcome to events manager</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h2 class="text-center">Sign In</h2>
+                                            <p class="lead">Don't have a Events Manager account?
+                                                <a href="#signUpModal" data-toggle="modal">Sign Up</a>
+                                            </p>
+                                            <form role="form" action="#" method="post">
+                                                <div class="form-group">
+                                                    <label for="user">Username</label>
+                                                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                                        <div class="input-group-addon">
+                                                            <i class=" fa fa-user-circle-o " aria-hidden="true "></i>
+                                                        </div>
+                                                        <input type="text" class="form-control" id="user" placeholder="enter username">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="password">Password</label>
+                                                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                                        <div class="input-group-addon">
+                                                            <i class=" fa fa-lock " aria-hidden="true "></i>
+                                                        </div>
+                                                        <input type="password" class="form-control" id="password" placeholder="enter password">
+                                                    </div>
+                                                </div>
+
+                                                <a href="#">Forgot your password?</a>
+
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                                            <button type="submit" class="btn btn-warning btn-block mb-5">Sign In</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Sign in Modal body Ends-->
+                            <li class="nav-item ">
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#signUpModal">
+                                    Register
+                                </button>
+
+                                <!-- Sign up Modal Body Start -->
+                                <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header bg-warning">
+                                                <h5 class="modal-title " id="exampleModalLabel">Welcome to events manager</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body bg-info text-light">
+                                                <h2 class="text-center text-warning">Sign up</h2>
+                                                <p class="lead text-dark">Already have an Events Manager account?
+                                                    <a href="#signUpModal" data-toggle="modal">Sign In</a>
+                                                </p>
+                                                <form role="form" action="#" method="post">
+                                                    <div class="form-group">
+                                                        <label for="user">Full name</label>
+                                                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                                            <div class="input-group-addon">
+                                                                <i class=" fa fa-user-circle-o " aria-hidden="true "></i>
+                                                            </div>
+                                                            <input type="text" class="form-control form-control-sm" id="fullname" placeholder="firstname lastname">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="user">Username</label>
+                                                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                                            <div class="input-group-addon">
+                                                                <i class=" fa fa-user-circle-o " aria-hidden="true "></i>
+                                                            </div>
+                                                            <input type="text" class="form-control form-control-sm" id="username" placeholder="enter username">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="email">Email</label>
+                                                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                                            <div class="input-group-addon">
+                                                                <i class=" fa fa-envelope " aria-hidden="true "></i>
+                                                            </div>
+                                                            <input type="email" class="form-control form-control-sm" id="email" placeholder="enter email">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="password">Password</label>
+                                                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                                            <div class="input-group-addon">
+                                                                <i class=" fa fa-lock " aria-hidden="true "></i>
+                                                            </div>
+                                                            <input type="password" class="form-control form-control-sm" id="password" placeholder="enter password">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="repassword">Confirm password</label>
+                                                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                                            <div class="input-group-addon">
+                                                                <i class="fa fa-lock" aria-hidden="true "></i>
+                                                            </div>
+                                                            <input type="password" class="form-control form-control-sm" id="repassword" placeholder="re-enter password">
+                                                        </div>
+                                                    </div>
+                                                    <p class="lead">By signing up you are agreeing to these
+                                                        <a href="#" class="text-primary">terms and conditons</a>
+                                                    </p>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="submit" class="btn btn-outline-warning">Sign Up</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="centers.html">Browse events</a>
+                            </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--Site Navigation End-->
+
+        </div>
+        <!-- Main body Start -->
+        <main id="wrapper" class="landing">
+            <div class="container">
+
+                <!--Section For Main Div Start-->
+                <section class="cover">
+                    <div class="cover-caption">
+                        <div class="col">
+                            <h1 class="display-3 font-weight-bold">Get your next experience or create yours</h1>
+                            <p class="lead  font-weight-bold">Events Manage is an events center app, this app will help you accept applications to use your
+                                center / facilities, and will either decline events when the proposed day is already taken,
+                                or suggest an available day</p>
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-lg btn-warning" data-toggle="modal" data-target="#signUpModal">
+                                Get Started
+                            </button>
+                            <p class="lead">Already Registered?
+                                <button type="button" class="btn btn-link font-weight-bold btn-dispay-1" data-toggle="modal" data-target="#signInModal">
+                                    Sign in
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!--Section For Main Div End-->
+
+                <!--Page Footer Start-->
+                <footer id="copywrite">
+                    <hr>
+                    <div class="row">
+                        <div class="col-12 col-sm-8 col-md-8 col-lg-6">
+                            <small id="copywrite" class="text-dark">&copy;2017 Events Manager, Andela Nigeria. All rights reserved.</small>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-6">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="fa fa-twitter">
+                                    </a>
+                                    </i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+
+                <!--Page Footer End-->
+
+            </div>
+        </main>
+        <!-- Main body Ends -->
+    </div>
+    <!--Entire Site Wrapper End-->
+
+    <!-- jQuery -->
+    <script src="public/jquery/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="./public/bootstrap4/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
