@@ -11,9 +11,7 @@ export default class EventsController {
                          */
 
     static addevent(req, res) {
-        const {
-      title, location, date, description,
-    } = req.body;
+        const { title, location, date, description, } = req.body;
         const newEventId = eventsData[eventsData.length - 1].id + 1;
         eventsData.push({
             id: newEventId,

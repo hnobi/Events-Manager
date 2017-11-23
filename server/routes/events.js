@@ -18,6 +18,7 @@ router.route('/centers')
     .get(CentersController.showAllCenters);
 
 router.route('/centers/:centerId')
+    .get(CentersController.showSingleCenter);
 
 
 export default router;
