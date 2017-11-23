@@ -35,21 +35,21 @@ export default class CentersController {
   * @return {obj} insertion error messages or success messages
   */
   static showSingleCenter(req, res) {
-    for (let j = 0; j < centersData.length; j++) {
-      if (centersData[j].id === req.params.centerId) {
-        return res.status(200)
-          .json({
-            status: 'Success',
-            message: centersData[j],
-
-          });
+    let aCenter = {}
+    let isUndefined = false
+    for (let i = 0; i < centersData.length; i++) {
+      if (centersData[i].id === parseFloat(req.params.centerId)) {
+        aCenter = centersData[i]
+        break;
+      } else {
+        isUndefined = true
       }
     }
-    res.status(400)
-      .json({
-        status: 'failed',
-        message: 'center  id does not exist',
-      });
+    if (isUndefined) {
+      return res.status(404).json({ error: 'Center not found' });
+    } else {
+      return res.status(200).send({ message: 'success', aCenter })
+    }
   }
 
 

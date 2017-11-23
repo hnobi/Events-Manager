@@ -27,13 +27,13 @@ app.use('/api/v1', eventsRoute);
 //     });
 // });
 
-app.use('*', (req, res) => {
-    res.status(404);
-    res.json({
-        status: 'Failed',
-        message: 'Page not found'
-    });
-});
+// app.use('*', (req, res) => {
+//     res.status(404);
+//     res.json({
+//         status: 'Failed',
+//         message: 'Page not found'
+//     });
+// });
 
 app.listen(port, () => console.log(`Application listening  on port ${port}`));
 
