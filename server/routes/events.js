@@ -1,16 +1,16 @@
 import express from 'express';
 import EventsController from '../controller/events';
 import CentersController from '../controller/centers';
-
+import ValidateEvents from '../middlewares/validator';
 const router = express.Router();
 
 // events routes
 router.route('/events')
-    .post(EventsController.addevent)
+    .post(ValidateEvents.addEventValidator, EventsController.addevent)
     .get(EventsController.showAllEvents);
 
 router.route('/events/:eventId')
-    .put(EventsController.modifyEvent)
+    .put(ValidateEvents.modifyEventValidator, EventsController.modifyEvent)
     .delete(EventsController.deleteEvent);
 
 // center routes
