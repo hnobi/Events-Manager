@@ -35,13 +35,13 @@ export default class CentersController {
   * @return {obj} insertion error messages or success messages
   */
   static showSingleCenter(req, res) {
-    for (let j = 0; j < centersData.length; j = j + 1) {
+    for (let j = 0; j < centersData.length; j++) {
       if (centersData[j].id === req.params.centerId) {
         return res.status(200)
           .json({
             status: 'Success',
-            message: 'Successfully retrived a center',
-            obj: centersData[j],
+            message: centersData[j],
+
           });
       }
     }
