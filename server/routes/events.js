@@ -14,7 +14,10 @@ router.route('/events/:eventId')
 
 // center routes
 router.route('/centers')
-    .post(CentersController.addcenter);
+    .post(CentersController.addcenter)
+    .get(CentersController.showAllCenters);
+
+router.route('/centers/:centerId')
 
 
 export default router;

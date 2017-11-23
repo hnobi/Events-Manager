@@ -3,12 +3,12 @@ import eventsData from '../models/events';
 
 export default class EventsController {
     /**
-                       * add event to the existing events
-                       * @param {obj} req
-                       * @param {obj} res
-                       * @memberof EventsController
-                       * @return {obj} insertion error messages or success messages
-                       */
+                         * add event to the existing events
+                         * @param {obj} req
+                         * @param {obj} res
+                         * @memberof EventsController
+                         * @return {obj} insertion error messages or success messages
+                         */
 
     static addevent(req, res) {
         const {
@@ -32,13 +32,13 @@ export default class EventsController {
 
 
     /**
-             * modified or update existing event
-             * @static
-             * @param {obj} req
-             * @param {obj} res
-             *  @return {obj} insertion error messages or success messages
-             * @memberof EventsController
-             */
+               * modified or update existing event
+               * @static
+               * @param {obj} req
+               * @param {obj} res
+               *  @return {obj} insertion error messages or success messages
+               * @memberof EventsController
+               */
     static modifyEvent(req, res) {
         const {
       title, location, date, description,
@@ -66,14 +66,14 @@ export default class EventsController {
 
     static deleteEvent(req, res) {
         for (let i = 0; i < eventsData.length; i = i + 1) {
-            const eventAfterDeletion = eventsData.filter(eventsData => {
-                eventsData[i].id !== parseInt(req.params.eventId, 10)
+            const eventAfterDeletion = eventsData.filter((eventsData) => {
+                eventsData[i].id !== parseInt(req.params.eventId, 10);
             });
             res.status(200);
             res.json({
                 status: 'Success',
-                message: 'Successfully delete event',
-                eventAfterDeletion
+                message: 'Successfully deleted event',
+                eventAfterDeletion,
             });
         }
         res.status(400);
@@ -83,6 +83,4 @@ export default class EventsController {
 
         });
     }
-
-
 }
