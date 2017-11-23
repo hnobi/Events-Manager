@@ -40,12 +40,11 @@ export default class CentersController {
         return res.status(200)
           .json({
             status: 'Success',
-            message: 'Successfully retrived a center',
-            obj: centersData[j],
+            message: centersData[j],
           });
       }
     }
-    res.status(400)
+    return res.status(400)
       .json({
         status: 'failed',
         message: 'center  id does not exist',
