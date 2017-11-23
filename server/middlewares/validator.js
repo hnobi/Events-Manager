@@ -3,7 +3,7 @@ import validator from 'validator';
 export default class ValidateEvents {
     static addEventValidator(req, res, next) {
         const {
-      title, location, date, description
+      title, location, date, description,
     } = req.body;
         const errors = {};
         if (title === undefined || location === undefined || date === undefined || description === undefined) {
@@ -48,11 +48,10 @@ export default class ValidateEvents {
 
     static modifyEventValidator(req, res, next) {
         const {
-      title, location, date, description
-    } = req.body
+      title, location, date, description,
+    } = req.body;
         errors = {};
         if (title || location || description || date) {
-
             if (title) {
                 if (!validator.isAlpha(title)) {
                     errors.title = 'Title of Event must contain only alphabets';
@@ -62,13 +61,13 @@ export default class ValidateEvents {
 
             if (location) {
                 if (!validator.isLength(location, { min: 20, max: undefined })) {
-                    errors.ingredients = "location must not be less than 20 characters";
+                    errors.ingredients = 'location must not be less than 20 characters';
                 }
             }
 
             if (description) {
                 if (!validator.isLength(description, { min: 25, max: undefined })) {
-                    errors.directions = "description must not be less than 25 characters";
+                    errors.directions = 'description must not be less than 25 characters';
                 }
             }
 
@@ -80,11 +79,9 @@ export default class ValidateEvents {
         } else {
             res.status(400);
             res.json({
-                status: "Failed",
-                message: "Specify a data to update"
+                status: 'Failed',
+                message: 'Specify a data to update',
             });
         }
-
-
     }
 }
