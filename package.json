@@ -5,7 +5,6 @@
   "main": "iapp.js",
   "scripts": {
     "start": "nodemon --watch server --exec babel-node -- server/app.js",
-    // "test": " mocha --timeout 500000 --compilers js:babel-core/register server/spec/"
     "test": "mocha --compilers js:babel-register --require babel-polyfill --recursive test/apptest.js"
   },
   "repository": {

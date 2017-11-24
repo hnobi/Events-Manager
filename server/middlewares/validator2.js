@@ -37,44 +37,44 @@ export default class ValidateCenters {
         }
         next();
     }
-}
+
 
     static modifycenterValidator(req, res, next) {
-    const {
+        const {
       name, address, facilities
     } = req.body;
-    errors = {};
-    if (name || address || facilities) {
-        if (title) {
-            if (!validator.isAlpha(name)) {
-                errors.name = 'name of center must contain only alphabets';
+        errors = {};
+        if (name || address || facilities) {
+            if (title) {
+                if (!validator.isAlpha(name)) {
+                    errors.name = 'name of center must contain only alphabets';
+                }
             }
-        }
 
 
-        if (address) {
-            if (!validator.isLength(address, { min: 10, max: undefined })) {
-                errors.address = 'addresss must not be less than 10 characters';
+            if (address) {
+                if (!validator.isLength(address, { min: 10, max: undefined })) {
+                    errors.address = 'addresss must not be less than 10 characters';
+                }
             }
-        }
 
-        if () {
-            if (!validator.isLength(facilities, { min: 25, max: undefined })) {
-                errors.directions = 'facilities must not be less than 25 characters';
+            if (!validator.isEmpty(facilities)) {
+                if (!validator.isLength(facilities, { min: 25, max: undefined })) {
+                    errors.directions = 'facilities must not be less than 25 characters';
+                }
             }
-        }
 
-        if (Object.keys(errors).length !== 0) {
-            return res.status(400)
-                .json(errors);
+            if (Object.keys(errors).length !== 0) {
+                return res.status(400)
+                    .json(errors);
+            }
+            next();
+        } else {
+            res.status(400);
+            res.json({
+                status: 'Failed',
+                message: 'Specify a data to update',
+            });
         }
-        next();
-    } else {
-        res.status(400);
-        res.json({
-            status: 'Failed',
-            message: 'Specify a data to update',
-        });
     }
 }
-
