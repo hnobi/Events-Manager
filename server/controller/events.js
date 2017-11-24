@@ -86,7 +86,7 @@ export default class EventsController {
       res.status(200)
         .json(eventsData);
     }
-    return res.status(400).json({ message: 'No available recipes' });
+    return res.status(400).json({ message: '' });
   }
 
 }
