@@ -19,7 +19,7 @@ router.route('/centers')
     .get(CentersController.showAllCenters);
 
 router.route('/centers/:centerId')
-    .get(CentersController.showSingleCenter)
+    .get(CentersController.getSingleCenter)
     .put(CentersController.modifycenter);
 
 
