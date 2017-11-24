@@ -23,7 +23,7 @@ export default class ValidateEvents {
             // check if location is not empty.if yes check if it character is lessthan 20. else read error -->location is required
             if (!validator.isEmpty(location)) {
                 if (!validator.isLength(location, { min: 20, max: undefined })) {
-                    errors.location = 'Ingredient must not be less than 20 characters';
+                    errors.location = 'location must not be less than 20 characters';
                 }
             } else {
                 errors.location = 'location of event is required';

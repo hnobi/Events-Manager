@@ -2,6 +2,7 @@ import express from 'express';
 import EventsController from '../controller/events';
 import CentersController from '../controller/centers';
 import ValidateEvents from '../middlewares/validator';
+import ValidateCenters from '../middlewares/validator2';
 const router = express.Router();
 
 // events routes
@@ -15,12 +16,12 @@ router.route('/events/:eventId')
 
 // center routes
 router.route('/centers')
-    .post(CentersController.addcenter)
+    .post(ValidateCenters.addCenterValidator, CentersController.addcenter)
     .get(CentersController.showAllCenters);
 
 router.route('/centers/:centerId')
     .get(CentersController.getSingleCenter)
-    .put(CentersController.modifycenter);
+    .put(ValidateCenters.modifycenterValidator, CentersController.modifycenter);
 
 
 export default router;
