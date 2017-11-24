@@ -5,7 +5,7 @@
   "main": "iapp.js",
   "scripts": {
     "start": "nodemon --watch server --exec babel-node -- server/app.js",
-    "test": "mocha --compilers js:babel-register --require babel-polyfill --recursive test/apptest.js"
+    "test": "mocha --compilers js:babel-register --require babel-polyfill --recursive spec/test.js"
   },
   "repository": {
     "type": "git",
