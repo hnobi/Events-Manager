@@ -1,5 +1,5 @@
 
-import eventsData from '../models/events';
+import eventsData from './../models/events';
 
 export default class EventsController {
   /**
@@ -11,7 +11,9 @@ export default class EventsController {
                        */
 
   static addevent(req, res) {
-    const { title, location, date, description, } = req.body;
+    const {
+      title, location, date, description,
+    } = req.body;
     const newEventId = eventsData[eventsData.length - 1].id + 1;
     eventsData.push({
       id: newEventId,
@@ -70,6 +72,7 @@ export default class EventsController {
         res.json({
           status: 'Success',
           message: 'Successfully deleted event',
+          eventsData
         });
       }
     }
@@ -88,6 +91,5 @@ export default class EventsController {
     }
     return res.status(400).json({ message: 'No events available' });
   }
-
 }
 

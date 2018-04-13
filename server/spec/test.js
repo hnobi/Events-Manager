@@ -1,24 +1,20 @@
 import chai from 'chai';
 import chaiHttp from 'chai-http';
-import centertest from '../model/center';
-import eventtest from '../model/event';
-import app from '../app'
-const chai = chai.expect;
+import app from './../app';
+
+// const {expect } = chai;
+const should = chai.should();
+
 chai.use(chaiHttp);
 
+describe('Test for EventManager endpoint', () => {
+  it('should list ALL blobs on /blobs GET', (done) => {
+    chai.request(app)
+      .get('/')
+      .end((err, res) => {
+        res.should.have.status(404);
 
-
-
-describe('gdgxgxgg', () => {
-    describe('bvvvv', () => {
-        it('    ', (done) => {
-            get('/')
-                .set('Content-Type', 'application/json')
-                .end((
-                    err, res) => {
-                    expect(res.body).to.have.status(200);
-                    done();
-                }
-        });
-    });
+        done();
+      });
+  });
 });
