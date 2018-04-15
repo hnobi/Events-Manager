@@ -12,20 +12,21 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 
 app.get('/', (req, res) => {
-  res.status(404)
+  res.status(202)
     .json({
       message: 'Welcome to EventsManager',
+
     });
 });
 
 app.use('/api/v1', eventsRoute);
-app.use('/api/v1/', (req, res) => {
-  res.status(404);
-  res.json({
-    status: 'Failed',
-    message: 'Page not found'
-  });
-});
+// app.use('/api/v1/', (req, res) => {
+//   res.status(404);
+//   res.json({
+//     status: 'Failed',
+//     message: 'Page not found'
+//   });
+// });
 
 app.use('*', (req, res) => {
   res.status(404);
@@ -34,7 +35,5 @@ app.use('*', (req, res) => {
     message: 'Page not found'
   });
 });
-
 app.listen(port, () => console.log(`Application listening  on port ${port}`));
-
 export default app;
