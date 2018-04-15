@@ -64,6 +64,4 @@ describe('All Test Cases for EventManager Application', () => {
       });
     });
   });
-
-  describe('All test case for center', (done) => { });
 });
