@@ -86,7 +86,7 @@ export default class EventsController {
 
   static showAllEvents(req, res) {
     if (eventsData.length !== 0) {
-      res.status(200)
+      return res.status(200)
         .json(eventsData);
     }
     return res.status(400).json({ message: 'No events available' });
