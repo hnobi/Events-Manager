@@ -2,10 +2,10 @@
   "name": "events-manager",
   "version": "1.0.0",
   "description": "Given you manage an events center, this app will help you accept applications to use your center\r / facilities, and will either decline events when the proposed day is already taken, or suggest an\r available day",
-  "main": "iapp.js",
+  "main": "app.js",
   "scripts": {
     "start": "nodemon --watch server --exec babel-node -- server/app.js",
-    "test": "mocha --compilers js:babel-register --require babel-polyfill --recursive test/apptest.js"
+    "test": "mocha  --compilers js:babel-register --require babel-polyfill --recursive server/spec/test.js"
   },
   "repository": {
     "type": "git",

@@ -41,3 +41,26 @@
 [1122/180246.097:ERROR:crash_report_database_win.cc(427)] unexpected header
 [1122/181746.099:ERROR:crash_report_database_win.cc(427)] unexpected header
 [1123/205034.971:ERROR:crash_report_database_win.cc(427)] unexpected header
+[1126/004006.186:ERROR:crash_report_database_win.cc(427)] unexpected header
+[1126/031459.289:ERROR:crash_report_database_win.cc(427)] unexpected header
+[1126/031459.289:ERROR:crash_report_database_win.cc(427)] unexpected header
+[1126/031959.300:ERROR:crash_report_database_win.cc(427)] unexpected header
+[1127/091545.579:ERROR:crash_report_database_win.cc(427)] unexpected header
+[1204/211932.331:ERROR:crash_report_database_win.cc(427)] unexpected header
+[1204/212932.332:ERROR:crash_report_database_win.cc(427)] unexpected header
+[1204/212932.333:ERROR:crash_report_database_win.cc(427)] unexpected header
+[1204/213432.816:ERROR:crash_report_database_win.cc(427)] unexpected header
+[1204/214932.817:ERROR:crash_report_database_win.cc(427)] unexpected header
+[1204/220432.818:ERROR:crash_report_database_win.cc(427)] unexpected header
+[1204/221932.818:ERROR:crash_report_database_win.cc(427)] unexpected header
+[1204/223432.819:ERROR:crash_report_database_win.cc(427)] unexpected header
+[1204/224932.819:ERROR:crash_report_database_win.cc(427)] unexpected header
+[1204/230432.819:ERROR:crash_report_database_win.cc(427)] unexpected header
+[1204/231932.820:ERROR:crash_report_database_win.cc(427)] unexpected header
+[1204/233432.822:ERROR:crash_report_database_win.cc(427)] unexpected header
+[1204/234932.878:ERROR:crash_report_database_win.cc(427)] unexpected header
+[1205/000432.887:ERROR:crash_report_database_win.cc(427)] unexpected header
+[1205/001338.825:ERROR:process_info.cc(632)] range at 0xcb3820b600000000, size 0x3a fully unreadable
+[1205/001338.825:ERROR:process_info.cc(632)] range at 0xcb3820d600000000, size 0x3a fully unreadable
+[1205/001338.825:ERROR:process_info.cc(632)] range at 0x0, size 0x3a fully unreadable
+[1205/001406.677:ERROR:crash_report_database_win.cc(427)] unexpected header

@@ -20,7 +20,7 @@ export default class CentersController {
       facilities,
     });
     res.status(201);
-    res.json({
+    res.send({
       status: 'Success',
       message: 'Successfully added new center',
       centersData,
